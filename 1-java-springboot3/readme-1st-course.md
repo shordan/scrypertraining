@@ -14,8 +14,9 @@ Spring Boot is a project within the Spring framework that simplifies the develop
 
 ## Repository Content
 
-- **[Java Basics](java-basics.md):** Basic fundamentals of the Java language.
-- **[Spring Boot Essentials](spring-boot-essentials.md):** Essential concepts of Spring Boot.
+- **[Core Java](core-java.md):** Basic fundamentals of the Java language.
+- **[1 Getting Started](getting-started.md):** Introduction and configuration of Spring Boot.
+- **[2 Spring Boot](spring-boot.md):** Essential concepts of Spring Boot.
 
 ## How to Use These Notes
 
