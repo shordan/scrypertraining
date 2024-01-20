@@ -5,4 +5,4 @@ Introduction, download and configuration of the environment to be used (spring t
 
 ## Contenido del Repositorio
 
-- **[Getting Started Notes](1-getting-started.pdf):** Notes of the environment configuration.
+- **[Getting Started Notes](1-getting-started-notes.pdf):** Notes of the environment configuration.
