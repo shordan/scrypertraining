@@ -12,13 +12,22 @@ String name = "John";
 for (int i = 0; i < 5; i++) {
     System.out.println("Iteration: " + i);
 }
+```
+## Loops
+Java supports different types of loops, including for, while, and do-while.
 
+```java
 // Example of a while loop
 int count = 0;
 while (count < 3) {
     System.out.println("Count: " + count);
     count++;
 }
+```
+## Conditionals
+Conditional statements in Java include if, else if, and else.
+
+```java
 // Example of if-else statement
 int number = 10;
 if (number > 0) {
@@ -28,6 +37,11 @@ if (number > 0) {
 } else {
     System.out.println("Zero");
 }
+```
+## Classes and Objects
+Java is an object-oriented programming language, and classes are the blueprint for objects.
+
+```java
 // Example of a simple class
 class Car {
     String brand;
@@ -43,6 +57,12 @@ Car myCar = new Car();
 myCar.brand = "Toyota";
 myCar.model = "Camry";
 myCar.displayInfo();
+
+```
+## Methods and Functions
+Methods in Java are blocks of code that perform a specific task and are defined within a class.
+
+```java
 // Example of a method
 int addNumbers(int a, int b) {
     return a + b;
@@ -51,6 +71,12 @@ int addNumbers(int a, int b) {
 // Calling the method
 int sum = addNumbers(5, 7);
 System.out.println("Sum: " + sum);
+
+```
+## Object-Oriented Programming (OOP)
+Java supports OOP principles like encapsulation, inheritance, and polymorphism.
+
+```java
 // Example of inheritance
 class Animal {
     void makeSound() {
