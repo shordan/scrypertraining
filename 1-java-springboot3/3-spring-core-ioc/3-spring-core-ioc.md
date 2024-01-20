@@ -40,7 +40,7 @@ The difference between singleton and prototype can be determined by using annota
 | @Repository | Yes | No |
 | @Controller | Yes | No |
 
-También can be determined by using properties to define them:
+Also can be determined by using properties to define them:
 
 | Property | Singleton | Prototype |
 | --- | --- | --- |
