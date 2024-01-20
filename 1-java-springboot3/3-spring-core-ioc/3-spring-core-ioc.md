@@ -154,7 +154,7 @@ public class C {
 }
 ```
 
-- [Inversion of Control and Dependency Injection with Spring](^1^): A complete tutorial on IoC and DI with Spring, with practical examples and detailed explanations.
-- [Spring IoC, Spring Bean Example Tutorial](^2^): A step-by-step tutorial on how to create and configure beans with Spring IoC and how to use different types of contexts.
-- [Spring Core Tutorial](^3^): An introductory tutorial on the fundamental concepts of Spring Core, such as components, dependency injection, scheduled aspects, etc.
-- [Spring – Understanding Inversion of Control with Example](^4^): An article that explains the logic behind IoC and DI with simple and clear examples.
+- [Inversion of Control and Dependency Injection with Spring](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring): A complete tutorial on IoC and DI with Spring, with practical examples and detailed explanations.
+- [Spring IoC, Spring Bean Example Tutorial](https://www.digitalocean.com/community/tutorials/spring-ioc-bean-example-tutorial): A step-by-step tutorial on how to create and configure beans with Spring IoC and how to use different types of contexts.
+- [Spring Core Tutorial](https://www.javaguides.net/p/spring-core-tutorial.html): An introductory tutorial on the fundamental concepts of Spring Core, such as components, dependency injection, scheduled aspects, etc.
+- [Spring – Understanding Inversion of Control with Example](https://www.geeksforgeeks.org/spring-understanding-inversion-of-control-with-example/): An article that explains the logic behind IoC and DI with simple and clear examples.
