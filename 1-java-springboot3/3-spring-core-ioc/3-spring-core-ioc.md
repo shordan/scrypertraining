@@ -42,7 +42,7 @@ The difference between singleton and prototype can be determined by using annota
 
 También can be determined by using properties to define them:
 
-| Property | Scope = "singleton" in XML or SINGLETON in Java | Scope = "prototype" in XML or PROTOTYPE in Java |
+| Property | Singleton | Prototype |
 | --- | --- | --- |
 | scope = "singleton" in XML or SINGLETON in Java | Yes | No |
 | scope = "prototype" in XML or PROTOTYPE in Java | No | Yes |
