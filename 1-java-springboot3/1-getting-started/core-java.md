@@ -1,5 +1,7 @@
 # Java Basics
 
+- **[Core Java Notes](1-getting-started/10-Core-java-notes.pdf):** Notes of the Java language.
+
 ## Variables
 
 In Java, variables are containers for storing data values. They must be declared with a data type before being used.
