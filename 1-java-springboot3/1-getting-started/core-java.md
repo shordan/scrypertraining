@@ -1,6 +1,6 @@
 # Java Basics
 
-- **[Core Java Notes](1-getting-started/10-Core-java-notes.pdf):** Notes of the Java language.
+- **[Core Java Notes](10-Core-java-notes.pdf):** Notes of the Java language.
 
 ## Variables
 
