@@ -2,5 +2,14 @@
 <beans xmlns="http://www.springframework.org/schema/beans" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<bean id="alien" class="com.shordan.SpringDemo.Alien"></bean>
+	<bean id="alien" class="com.shordan.SpringDemo.Alien" autowire="byName">
+		<property name="age" value="10"	></property>
+
+	</bean>
+	
+	<bean id="com" class="com.shordan.SpringDemo.Laptop">
+	</bean>
+	<bean id="desktop" class="com.shordan.SpringDemo.Desktop">
+
+	</bean>
 </beans>
