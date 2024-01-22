@@ -1,0 +1,2 @@
+INDEX VERSION 1.134+C:\Users\admin\Desktop\Trabajo\Scryper\training\1-java-springboot3\3-spring-core-ioc\SpringDemo\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
