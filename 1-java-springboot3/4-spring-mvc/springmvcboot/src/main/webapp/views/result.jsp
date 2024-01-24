@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Result is: ${num3}
+	Result is: ${a1}
+	
+	Welcome Back ${name}
 </body>
 </html>

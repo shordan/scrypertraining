@@ -8,9 +8,9 @@
 </head>
 <body>
 	welcome to shordan
-	<form action="add">
-		Enter 1st number: <input type = "text" name = "num1" ><br>
-		Enter 2st number: <input type = "text" name = "num2" ><br>
+	<form action="addAlien" method = "post"><!-- El método post hace que no se muestren nuestras variables en el url -->
+		Enter id: <input type = "text" name = "aid" ><br>
+		Enter name: <input type = "text" name = "aname" ><br>
 		<input type = "submit">
 	</form>
 </body>
