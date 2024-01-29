@@ -1,8 +1,11 @@
 package com.shordan.springmvcboot;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -13,8 +16,15 @@ import org.springframework.ui.Model;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.List;
+
 @Controller
 public class HomeController {
+	
+	@Autowired
+	AlienRepo repo;
 	
 	
 	@ModelAttribute
@@ -26,7 +36,7 @@ public class HomeController {
 	
 	
 	@RequestMapping("/")
-	public String Home()
+	public String home()
 	{
 		
 		//System.out.println("Home page requested");
@@ -75,12 +85,12 @@ public class HomeController {
 		*/
 	
 		//forma resumida sin http session , con model y con el metodo tipo String
-		@RequestMapping("add")	
-		public String add(@RequestParam("num1") int i, @RequestParam("num2") int j, ModelMap m){
-			int num3 = i+j;
-			m.addAttribute("num3", num3);
-			return "result";
-		}
+		//@RequestMapping("add")	
+		//public String add(@RequestParam("num1") int i, @RequestParam("num2") int j, ModelMap m){
+		//	int num3 = i+j;
+		//	m.addAttribute("num3", num3);
+		//	return "result";
+		//}
 		//enves de ModelMap se puede poner solo Model 
 		
 		/*
@@ -110,12 +120,37 @@ public class HomeController {
 		}
 		*/
 		//addAlien sing @ModelAttribute sin el modelmap y asignandole otro nombre a lo que se imprime en result.jsp
-		@RequestMapping("addAlien")	
-		public String addAlien(@ModelAttribute("a1") Alien a){
+		//@RequestMapping("addAlien")	
+		//public String addAlien(@ModelAttribute("a1") Alien a){
 
-			return "result";
-		}
+		//	return "result";
+		//}
 		//@ModelAttribute("a1") , el result tambien se pone a1
 		//si no pongo nada y en el result pongo alien (solo con alien funciona) por alguna razon funciona (no entiendo por qué)
+
+		//addAlien sing @ModelAttribute sin el modelmap y asignandole otro nombre a lo que se imprime en result.jsp
+		@GetMapping("getAliens")	
+		public String getAliens(Model m)
+		{
+			
+			m.addAttribute("result", repo.findAll());
+			return "showAliens";
+		}
+		
+		//addAlien sing @ModelAttribute sin el modelmap y asignandole otro nombre a lo que se imprime en result.jsp
+		@GetMapping("getAlien")	
+		public String getAlien(@RequestParam int aid, Model m)
+		{
+			m.addAttribute("result", repo.getOne(aid));
+			return "showAliens";
+		}
+		
+		//addAlien sing @ModelAttribute sin el modelmap y asignandole otro nombre a lo que se imprime en result.jsp
+		@PostMapping(value = "addAlien")	
+		public String addAlien(@ModelAttribute Alien a)
+		{
+			repo.save(a);
+			return "result";
+		}
 
 }

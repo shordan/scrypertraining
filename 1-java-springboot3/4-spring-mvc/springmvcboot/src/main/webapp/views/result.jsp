@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Result is: ${a1}
+	Result is: ${a}
 	
 	Welcome Back ${name}
 </body>

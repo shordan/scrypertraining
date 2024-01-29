@@ -8,7 +8,7 @@
 </head>
 <body>
 	welcome to shordan
-	<form action="addAlien" method = "post"><!-- El método post hace que no se muestren nuestras variables en el url -->
+	<form action="addAlien" ><!-- El método post hace que no se muestren nuestras variables en el url -->
 		Enter id: <input type = "text" name = "aid" ><br>
 		Enter name: <input type = "text" name = "aname" ><br>
 		<input type = "submit">
